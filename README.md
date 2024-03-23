@@ -12,8 +12,8 @@ This dataset was gotten from kaggle as csv file which was downloaded to work on
 
 ## Tools
 
-- WPS Spreedsheet - This was used to make quick correction and data cleaning and analysis
-- Power Bi - This was used for visualization of insight and to expansaite the analysis derived 
+- WPS Spreedsheet - This was used to make quick correction,data cleaning and analysis
+- Power Bi - This was used for visualization of insight and to expansaite the analysis derived using DAX
 
 ## Data Cleaning / preparation
   Initially the data cleaning steps was performed fron
@@ -36,40 +36,14 @@ This dataset was gotten from kaggle as csv file which was downloaded to work on
      
 ## Data Analysis
 Include some interesting code/features worked with
-```sql
-select *
-from table 1;select 'first_name'columnn  , count (*)count
-  from[dbo].[hr_info]
-  where first_name IS null
-  group by first_name
-  union
-  select 'id'columnn  , count (*)count
-  from[dbo].[hr_info]
-  where id IS null
-  group by id;
+```excel
+=trim(B2:B48896)
 ```
-
-```sql
-SELECT jobtitle, department,age,
-   case
-	WHEN age>=18 AND age <=24 THEN '18-24'
-        WHEN age>=25 AND age <=34 THEN '25-34'
-        WHEN age>=35 AND age <=44 THEN '35-44'
-        WHEN age>=45 AND age <=54 THEN '45-54'
-        WHEN age>=55 AND age <=64 THEN '55-64'
-		ELSE '65+'
-end as age_distribution, count(*) over (partition by 
-	case
-	WHEN age>=18 AND age <=24 THEN '18-24'
-        WHEN age>=25 AND age <=34 THEN '25-34'
-        WHEN age>=35 AND age <=44 THEN '35-44'
-        WHEN age>=45 AND age <=54 THEN '45-54'
-        WHEN age>=55 AND age <=64 THEN '55-64'
-		ELSE '65+'
-end )as age_distribution_count
-from[dbo].[hr_info];
+To revome extra  white spacing 
+```excel
+==COUNTIF(F:F,"Crown Heights")
 `````
-
+To count based on conditions
 ### Results/Findings
 The analysis results are summarized as follows:
 1. The total host are 37,450
@@ -84,7 +58,8 @@ Based on the analysis, we recommend the following actions:
 ## References
 
 Github                                               
-Her data project youtube channel 
+Kaggle
+Youtube
 
 
 
