@@ -16,7 +16,7 @@ This dataset was gotten from kaggle as csv file which was downloaded to work on
 - Power Bi - This was used for visualization of insight and to expansaite the analysis derived using DAX
 
 ## Data Cleaning / preparation
-  Initially the data cleaning steps was performed fron
+  Initially the data cleaning steps was performed from
   - Data Loading
   - Data Cleaning
   - Filling null values and characters
@@ -53,13 +53,9 @@ The analysis results are summarized as follows:
 
 ## Recommendations
 Based on the analysis, we recommend the following actions:
-   From this analysis Host in Manhattan are the most productive and the busiest , some certain host  charge low prices on listing space and have many spaces to list, In Brooklyn there also productive host but don't have many listing space as host in Manhattan. Private room and Entire apartment room type are preferred listing space for host to own as customer can stay for more nights which increase profitability. Host who has many listing space has higher reviews because they are experienced
+From this analysis Host in Manhattan are the most productive and the busiest , some certain host  charge low prices on listing space and have many spaces to list, In Brooklyn there also productive host but don't have many listing space as host in Manhattan. Private room and Entire apartment room type are preferred listing space for host to own as customer can stay for more nights which increase profitability. Host who has many listing space has higher reviews because they are experienced
 
 ## References
-
-Github                                               
-Kaggle
-Youtube
-
-
-
+ - Github
+ - Kaggle
+ - Youtube
